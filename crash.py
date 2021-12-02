@@ -24,7 +24,7 @@ print("""
 
 """)
 
-ip = str(input("Host/Ip"))
+ip = str(input("Host/Ip:"))
 port = int(input(" Port:"))
 choice = str(input(" UDP(y) / TCP (n):"))
 times = int(input(" Packets per connection:"))
