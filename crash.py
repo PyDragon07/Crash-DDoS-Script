@@ -25,10 +25,10 @@ print("""
 """)
 
 ip = str(input("Host/Ip:"))
-port = int(input(" Port:"))
-choice = str(input(" UDP(y) / TCP (n):"))
-times = int(input(" Packets per connection:"))
-threads = int(input(" Threads:"))
+port = int(input("Port:"))
+choice = str(input("UDP(y) / TCP (n):"))
+times = int(input("Packets per connection:"))
+threads = int(input("Threads:"))
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[*]","[!]","[#]"))
