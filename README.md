@@ -8,6 +8,7 @@ it use udp/tcp protocol to attack the target
 usage :
 
 windows : python crash.py
+
 linux : python3 crash.py
 
 ###################################################################
