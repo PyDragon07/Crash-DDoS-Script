@@ -6,28 +6,31 @@ import threading
 print("""
 
 
+    ▄████▄   ██▀███   ▄▄▄        ██████  ██░ ██ 
+   ▒██▀ ▀█  ▓██ ▒ ██▒▒████▄    ▒██    ▒ ▓██░ ██▒
+   ▒▓█    ▄ ▓██ ░▄█ ▒▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░
+   ▒▓▓▄ ▄██▒▒██▀▀█▄  ░██▄▄▄▄██   ▒   ██▒░▓█ ░██ 
+   ▒ ▓███▀ ░░██▓ ▒██▒ ▓█   ▓██▒▒██████▒▒░▓█▒░██▓
+   ░ ░▒ ▒  ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
+     ░  ▒     ░▒ ░ ▒░  ▒   ▒▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░
+   ░          ░░   ░   ░   ▒   ░  ░  ░   ░  ░░ ░
+   ░ ░         ░           ░  ░      ░   ░  ░  ░
+   ░                                            
 
 
-     ▄████▄   ██▀███   ▄▄▄        ██████  ██░ ██    
-    ▒██▀ ▀█  ▓██ ▒ ██▒▒████▄    ▒██    ▒ ▓██░ ██▒   
-    ▒▓█    ▄ ▓██ ░▄█ ▒▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░   
-    ▒▓▓▄ ▄██▒▒██▀▀█▄  ░██▄▄▄▄██   ▒   ██▒░▓█ ░██    
-    ▒ ▓███▀ ░░██▓ ▒██▒ ▓█   ▓██▒▒██████▒▒░▓█▒░██▓   
-    ░ ░▒ ▒  ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒   
-      ░  ▒     ░▒ ░ ▒░  ▒   ▒▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░   
-    ░          ░░   ░   ░   ▒   ░  ░  ░   ░  ░░ ░   
-    ░ ░         ░           ░  ░      ░   ░  ░  ░
+        |----> Coded by PyDragon <----|
+       |----> TCP/UDP DDoS script <----|
+   
 
-           |---> Coded by PyDragon <---|
-        |---> CRASH is a UDP/TCP DDoS tool <---|
+
 
 """)
 
-ip = str(input("Host/Ip:"))
-port = int(input("Port:"))
-choice = str(input("UDP(y) / TCP (n):"))
-times = int(input("Packets per connection:"))
-threads = int(input("Threads:"))
+ip = str(input(" Url/Ip:"))
+port = int(input(" Port(80):"))
+choice = str(input(" UDP(y/n):"))
+times = int(input(" Packets per connection:"))
+threads = int(input(" Threads:"))
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[*]","[!]","[#]"))
